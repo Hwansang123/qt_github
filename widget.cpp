@@ -9,6 +9,10 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     ui->setupUi(this);
 
     initialize();
+
+    //내용추가
+    //소스코드 변경
+    //
 }
 
 void Widget::initialize()
@@ -61,6 +65,7 @@ void Widget::newConnection()
     clientConnection->write(message);
     clientConnection->disconnectFromHost();
 }
+
 
 Widget::~Widget()
 {
